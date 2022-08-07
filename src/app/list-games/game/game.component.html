@@ -1,0 +1,13 @@
+
+<div class="gameitem" *ngIf="game != undefined">
+    <h3>{{game.name}}</h3>
+    <p>{{game.id}}</p>
+    <p *ngFor="let genre of game.genres">{{genre.name}}/{{genre.id}}</p>
+    <p *ngFor="let screenshot of game.short_screenshots"><img src="{{screenshot.image}}"></p>
+    <p> <img src="{{game.background_image}}"> </p>
+    <p>{{game.dominant_color}}</p>
+    <p>{{game.rating}}</p>
+    <p>{{game.released}}</p>
+    <p>{{game.saturated_color}}</p>
+    <p>{{game.slug}}</p>
+</div>
